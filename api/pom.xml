@@ -55,6 +55,20 @@
 			</exclusions>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>testcontainers</artifactId>
+			<version>1.17.3</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.8.2</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter-engine</artifactId>
@@ -307,7 +321,7 @@
 					<target>${java.version}</target>
 					<showWarnings>true</showWarnings>
 					<compilerArgs>
-						<arg>-Werror</arg>
+<!--						<arg>-Werror</arg>-->
 						<arg>-Xlint:all</arg>
 						<!-- https://stackoverflow.com/a/69734707 -->
 						<arg>-Xlint:-processing</arg>

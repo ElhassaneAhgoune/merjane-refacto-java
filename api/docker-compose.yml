@@ -1,0 +1,15 @@
+version: '3'
+services:
+  h2-db:
+    image:  buildo/h2database
+    container_name: h2-db
+    ports:
+      - "9092:9092"
+    environment:
+      - H2_OPTIONS=-tcp -tcpAllowOthers -ifNotExists
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    driver: bridge
