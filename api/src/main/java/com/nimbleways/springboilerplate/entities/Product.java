@@ -1,5 +1,6 @@
 package com.nimbleways.springboilerplate.entities;
 
+import com.nimbleways.springboilerplate.dto.ProductType;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -25,7 +26,7 @@ public class Product {
     private Integer available;
 
     @Column(name = "type")
-    private String type;
+    private ProductType type;
 
     @Column(name = "name")
     private String name;
